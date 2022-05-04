@@ -30,197 +30,247 @@
 						แนะนำให้ปรึกษาแพทย์ผู้เชี่ยวชาญ</small>
 				</div>
 				<form class="form-register" action="{{url_for('signupForm')}}" method="GET">
-					<div id="form-total">
 
-						<h2>1</h2>
-						<section>
-							<div class="inner">
-								<div class="form-row col-sm-10">
-									<div class="form-holder">
-										<h4 class="col-md-2 control-label">ขื่อ</h4>
-										<div class="col-md-10">
-											<input name="fname" placeholder="" type="text">
-										</div>
-										<!-- <input type="text" placeholder="ชื่อ" class="form-control input1" id="first_name"> -->
+					<div class="progressbar">
+						<div class="progress" id="progress"></div>
 
-									</div>
-								</div>
-							</div>
-						</section>
+						<div class="progress-step progress-step-active" data-title=""></div>
+						<div class="progress-step" data-title=""></div>
+						<div class="progress-step" data-title=""></div>
+						<div class="progress-step" data-title=""></div>
+					</div>
 
+					<style>
 						
-						<h2>2</h2>
-						<section>
-							<div class="inner">
-								<div class="form-row ">
-									<div class="container">
-										<div class="row">
-											<style>
-												table,
-												td {
+					</style>
+					<div class="form-step form-step-active">
+						<div class="input-group">
+							<label >ชื่อ - นามสกุล</label>
+							<input type="text" name="fname" id="" class=""/>
+						</div>
+
+						<div class="">
+							
+							<a href="#" class="btn btn-next width-50 ml-auto">ต่อไป</a>
+						</div>
+					</div>
+					<div class="form-step">
+
+						<div class="input-group">
+
+							<section>
+								<div class="inner">
+									<div class="form-row ">
+										<div class="container">
+											<div class="row">
+												<style>
+													table,
+													td {
+
+														margin-left: auto;
+														margin-right: auto;
+														border-collapse: collapse;
+														width: 630px;
+														text-align: center;
+														font-size: 13px;
+														font-family: 'IBM Plex Sans Thai', sans-serif;
+														font-family: 'Krub', sans-serif;
+														font-family: 'Prompt', sans-serif;
+
+
+
+													}
+
+													.col-2 {
+														border: 1px dashed black;
+														height: 50%;
+														width: 100%;
+														padding: 5px;
+														width: 50%;
+														min-width: 200px;
+														float: left;
+														font-size: 12px;
+													}
+												</style>
+												<table class="table">
+													<h4>Sex : เพศสภาพ</h4>
+													<thead>
+														<tr>
+															<th scope="col"></th>
+															<th scope="col"></th>
+
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td style="text-align: left;" ><input type="checkbox" class="css_data_item7" id="vehicle1" name="Sex" value="Male">
+																<label for=""> ชาย</label>
+															</td>
+															<td style="text-align: left;"><input type="checkbox" class="css_data_item7" id="vehicle1" name="Sex" value="Female">
+																<label for=""> หญิง</label><br>
 	
-													margin-left: auto;
-													margin-right: auto;
-													border-collapse: collapse;
-													width: 630px;
-													text-align: center;
-													font-size: 13px;
-													font-family: 'IBM Plex Sans Thai', sans-serif;
-													font-family: 'Krub', sans-serif;
-													font-family: 'Prompt', sans-serif;
-	
-	
-	
-												}
-	
-												.col-2 {
-													border: 1px dashed black;
-													height: 50%;
-													width: 100%;
-													padding: 5px;
-													width: 50%;
-													min-width: 200px;
-													float: left;
-													font-size: 12px;
-												}
-											</style>
+															</td>
+
+														</tr>
+													</tbody>
+												</table>
+
+
+											</div>
+
 											<table class="table">
-												<h4>Sex : เพศสภาพ</h4>
+												<h4>AgeGategory : กลุ่มอายุ</h4>
 												<thead>
 													<tr>
 														<th scope="col"></th>
 														<th scope="col"></th>
-														
-							
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+
+														<th scope="col" style="text-align: center;"></th>
+
 													</tr>
 												</thead>
 												<tbody>
-												
 													<tr>
-														<td style="text-align: left;" ><input type="checkbox" class="css_data_item7" id="vehicle1" name="Sex" value="Male">
-															<label for=""> ชาย</label>
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="18-24">
+															<label for="vehicle1"> 18-24</label></td>
+														<td style="text-align: left;"><label for="vehicle1"> 
+															<input type="checkbox" class="css_data_item8" id="vehicle1" name="vehicle1" value="25-29">
+															<label for="vehicle1"> 25-29</label></label></td>
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="30-34">
+															<label for="vehicle1"> 30-34</label>
 														</td>
-														<td style="text-align: left;"><input type="checkbox" class="css_data_item7" id="vehicle1" name="Sex" value="Female">
-															<label for=""> หญิง</label><br>
-
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="35-39">
+															<label for="vehicle1"> 35-39</label>
 														</td>
-														
-													</tr>
-													<!-- <tr>
-														<th scope="row">9</th>
-														<td style="text-align: left;">AgeGategory : กลุ่มอายุ</td>
-														<td><input type="checkbox" class="css_data_item8" id="vehicle1" name="vehicle1" value="1">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="40-44">
+															<label for="vehicle1"> 40-44</label>
 														</td>
-														<td><input type="checkbox" class="css_data_item8" id="vehicle1" name="vehicle1" value="2">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="45-49">
+															<label for="vehicle1"> 45-49</label>
 														</td>
-														<td><input type="checkbox" class="css_data_item8" id="vehicle1" name="vehicle1" value="3">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="50-54">
+															<label for="vehicle1"> 50-54</label>
 														</td>
-														<td><input type="checkbox" class="css_data_item8" id="vehicle1" name="vehicle1" value="4">
-														</td>
-														<td><input type="checkbox" class="css_data_item8" id="vehicle1" name="vehicle1" value="5">
-														</td>
-													</tr>
+													</tr>	
 													<tr>
-														<th scope="row">10</th>
-														<td style="text-align: left;">Race : เชื้อชาติ</td>
-														<td><input type="checkbox" class="css_data_item9" id="vehicle1" name="vehicle1" value="1">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="55-59">
+															<label for="vehicle1"> 55-59</label>
 														</td>
-														<td><input type="checkbox" class="css_data_item9" id="vehicle1" name="vehicle1" value="2">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="60-64">
+															<label for="vehicle1"> 60-64</label>
 														</td>
-														<td><input type="checkbox" class="css_data_item9" id="vehicle1" name="vehicle1" value="3">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="65-69">
+															<label for="vehicle1"> 65-69</label>
 														</td>
-														<td><input type="checkbox" class="css_data_item9" id="vehicle1" name="vehicle1" value="4">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="70-74">
+															<label for="vehicle1"> 70-74</label>
 														</td>
-														<td><input type="checkbox" class="css_data_item9" id="vehicle1" name="vehicle1" value="5">
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="75-79">
+															<label for="vehicle1"> 75-79</label>
 														</td>
-													</tr> -->
+														<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="80+">
+															<label for="vehicle1"> 80 ขึ้นไป</label>
+														</td>
+														<td></td>
 													
-							
+													</tr>
+
+
+
 												</tbody>
 											</table>
 
-											
+
+											<!-- <table class="table">
+												<h4>Race : เชื้อชาติ</h4>
+												<thead>
+													<tr>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+														<th scope="col"></th>
+
+														<th scope="col" style="text-align: center;"></th>
+
+													</tr>
+												</thead>
+												<tbody>
+
+													<tr>
+														<td style="text-align: left;"><input type="checkbox"
+																class="css_data_item9" id="vehicle1" name="vehicle1"
+																value="1">
+															<label for="vehicle1"> American lndian/Alashan
+																Native</label>
+														</td>
+														<td style="text-align: left;"><input type="checkbox"
+																class="css_data_item9" id="vehicle1" name="vehicle1"
+																value="1">
+															<label for="vehicle1"> Asian</label>
+														</td>
+														<td style="text-align: left;"><input type="checkbox"
+																class="css_data_item9" id="vehicle1" name="vehicle1"
+																value="1">
+															<label for="vehicle1"> Black</label>
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align: left;"><input type="checkbox"
+																class="css_data_item9" id="vehicle1" name="vehicle1"
+																value="2">
+															<label for="vehicle1"> Hispanic</label>
+														</td>
+														<td style="text-align: left;"><input type="checkbox"
+																class="css_data_item9" id="vehicle1" name="vehicle1"
+																value="3">
+															<label for="vehicle1"> white</label>
+														</td>
+														<td style="text-align: left;"><input type="checkbox"
+																class="css_data_item9" id="vehicle1" name="vehicle1"
+																value="4">
+															<label for="vehicle1"> Other</label>
+														</td>
+
+													</tr>
+
+
+												</tbody>
+											</table> -->
 										</div>
-
-										<table class="table">
-											<h4>AgeGategory : กลุ่มอายุ</h4>
-											<thead>
-												<tr>
-													<th scope="col"></th>
-													<th scope="col" ></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-													<th scope="col"></th>
-
-													<th scope="col" style="text-align: center;"></th>
-						
-												</tr>
-											</thead>
-											<tbody>
-											
-									
-												<tr>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="18-24">
-														<label for="vehicle1"> 18-24</label></td>
-													<td style="text-align: left;"><label for="vehicle1"> 
-														<input type="checkbox" class="css_data_item8" id="vehicle1" name="vehicle1" value="25-29">
-														<label for="vehicle1"> 25-29</label></label></td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="30-34">
-														<label for="vehicle1"> 30-34</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="35-39">
-														<label for="vehicle1"> 35-39</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="40-44">
-														<label for="vehicle1"> 40-44</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="45-49">
-														<label for="vehicle1"> 45-49</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="50-54">
-														<label for="vehicle1"> 50-54</label>
-													</td>
-												</tr>	
-												<tr>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="55-59">
-														<label for="vehicle1"> 55-59</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="60-64">
-														<label for="vehicle1"> 60-64</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="65-69">
-														<label for="vehicle1"> 65-69</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="70-74">
-														<label for="vehicle1"> 70-74</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="75-79">
-														<label for="vehicle1"> 75-79</label>
-													</td>
-													<td style="text-align: left;"><input type="checkbox" class="css_data_item8" id="vehicle1" name="AgeCategory" value="80+">
-														<label for="vehicle1"> 80 ขึ้นไป</label>
-													</td>
-													<td></td>
-												
-												</tr>
-												
-												
-						
-											</tbody>
-										</table>
 									</div>
 								</div>
-							</div>
-						</section>
+							</section>
 
-						<h2>3</h2>
-						<section>
+						</div>
+						<div class="btns-group">
+							<a href="#" class="btn btn-prev">ก่อนหน้านี้</a>
+							<a href="#" class="btn btn-next">ต่อไป</a>
+						</div>
+					</div>
+
+
+
+					<div class="form-step">
+
+						<div class="input-group">
+
 							<div class="inner">
 								<div class="form-row">
 
@@ -299,12 +349,8 @@
 															type="text"></td>
 													</tr>
 												
-
 												</tbody>
 											</table>
-
-
-
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
@@ -312,13 +358,22 @@
 											</div>
 										</div>
 									</div>
-
 								</div>
-
 							</div>
-						</section>
-						<h2>4</h2>
-						<section>
+						</div>
+
+
+						<div class="btns-group">
+							<a href="#" class="btn btn-prev">ก่อนหน้านี้</a>
+							<a href="#" class="btn btn-next">ต่อไป</a>
+						</div>
+					</div>
+
+
+
+					<div class="form-step">
+						
+						<div class="input-group">
 							<div class="inner">
 								<div class="container">
 									<div class="row">
@@ -478,30 +533,17 @@
 									</div>
 								</div>
 							</div>
-						</section>
-
-						<h2>5</h2>
-						<section>
-							<div class="inner">
-								<div class="form-row table-responsive">
-									<table class="table">
-										<tbody>
-											<tr class="space-row">
-												<th>ชื่อ :</th>
-												<th>A </th>
-											</tr>
-											<tr class="space-row">
-												<th>คะแนนที่ได้ :</th>
-												<th>0</th>
-											</tr>
-
-										</tbody>
-									</table>
-									<button type="submit"></button>
-								</div>
-							</div>
-						</section>
+						</div>
+						<div class="btns-group">
+							<a href="#" class="btn btn-prev">ก่อนหน้านี้</a>
+							<a href="thankyou.html"type="submit" value="Submit" class="btn" >เสร็จสิ้น</a>
+							<!-- <input type="submit" value="Submit" class="btn"> -->
+						</div>
 					</div>
+
+
+
+				
 				</form>
 			</div>
 		</div>
@@ -510,6 +552,7 @@
 	<script src="{{ url_for('static', filename = 'js/jquery.steps.js')}}"></script>
 <!--	{{ url_for('static', filename = 'css/styles.css') }}-->
 	<script src="{{ url_for('static', filename = 'js/main.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/script.js')}}"></script>
 
 	<script type="text/javascript">
 		$(function () {

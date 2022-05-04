@@ -1,10 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<meta charset="utf-8">
+	<title>แบบประเมินความเสี่ยงต่อการเป็นโรคหัวใจ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;700&family=Krub:wght@200&family=Prompt:wght@300&display=swap"
+		rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hi {{data}}</h1>
+	<!-- <div class="page-content" style="background-image: url('images/wizard-v2-bg.jpg')"> -->
+	<div class="page-content">
+		<div class="wizard-v2-content">
+			<div class="wizard-image">
+			</div>
+			<div class="wizard-form">
+				<div class="wizard-header">
+					<h4>แบบประเมินความเสี่ยงต่อการเป็นโรคหัวใจ</h4>
+					<small>การแปลผลจากคะแนน</small>
+					<small>คะแนน = 0 : พบว่า คุณไม่มีความเสี่ยง “โรคเส้นเลือดหัวใจ”</small><br>
+					<small>คะแนนมากกว่า 2 ขึ้นไป : พบว่า มีความเสี่ยงโรคเส้นเลือดหัวใจ
+						และเกณฑ์ความเสี่ยงจะเพิ่มสูงขึ้นตามจำนวนคะแนน ที่เพิ่มขึ้นของคุณ
+						แนะนำให้ปรึกษาแพทย์ผู้เชี่ยวชาญ</small>
+				</div>
+				<form class="form-register" action="#" method="post">
+					<div id="form-total">
+
+		
+						<section>
+							<div class="inner">
+								<div class="form-row table-responsive">
+
+									<table class="table">
+										<tbody>
+											<tr class="space-row">
+												<th>ชื่อ :</th>
+												<th>A </th>
+											</tr>
+											<tr class="space-row">
+												<th>คะแนนที่ได้ :</th>
+												<th>0</th>
+											</tr>
+
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</section>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/main.js"></script>
+
+
 </body>
+
 </html>

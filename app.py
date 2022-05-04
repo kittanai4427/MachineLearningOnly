@@ -1,6 +1,6 @@
 import pandas as pd
 from flask import Flask,render_template,request
-import Broker as bk
+# import Broker as bk
 app = Flask(__name__)
 
 
@@ -8,6 +8,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+    
 
 @app.route('/sendData')
 def signupForm():
@@ -36,17 +38,17 @@ def signupForm():
           "Diabetic": "Yes", "PhysicalActivity": "No", "GenHealth": 0,
           "SleepTime": 15.0, "Asthma": "Yes", "KidneyDisease": "No", "SkinCancer": "No"}
 
-    df = bk.fillData(data)
+    # df = bk.fillData(data)
 
-    df = bk.clean(df)
-    result = bk.predict(df)
-    predNN = pd.DataFrame(result)
-    y_predNN = predNN.idxmax(axis=1)
+    # df = bk.clean(df)
+    # result = bk.predict(df)
+    # predNN = pd.DataFrame(result)
+    # y_predNN = predNN.idxmax(axis=1)
 
-    if y_predNN[0] == 0:
-        out = 'คุณไม่เป็นโรคหัวใจ'
-    else:
-        out = 'คุณเป็นโรคหัวใจ'
+    # if y_predNN[0] == 0:
+    #     out = 'คุณไม่เป็นโรคหัวใจ'
+    # else:
+    #     out = 'คุณเป็นโรคหัวใจ'
     return render_template('thankyou.html',data=out)
 
 if __name__ == '__main__':
